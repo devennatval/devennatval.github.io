@@ -6,7 +6,10 @@ body{
     margin-right:auto;
     max-width: 50rem;
     margin-left:2%;
-    margin-top:9%
+    margin-top:14%
+}
+.site-logo{
+    margin-left:0;
 }
 .site-logo-btn{
     filter:invert(100%);
