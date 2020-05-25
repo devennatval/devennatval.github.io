@@ -1,0 +1,51 @@
+body{
+    background-color:black;
+    color:black;
+}
+.container{
+    margin-right:auto;
+    max-width: 50rem;
+    margin-left:2%;
+    margin-top:9%
+}
+.site-logo-btn{
+    filter:invert(100%);
+}
+.site-header{
+    position: absolute;
+    top:0;
+    right:0;
+    left:0;
+}
+.site-nav-menu{
+    list-style: none;
+    letter-spacing: 1px;
+    padding-left:0;
+}
+.site-nav-menu li{
+    display: inline-block;
+}
+.site-nav-menu li a{
+    color:white;
+    text-decoration: none;
+    padding: 0.5em 0.5em;
+    font-size:0.8em;
+}
+.gallery{
+    width:100%;
+    position: relative;
+    left:0px;
+    top:0px;
+}
+.site-content{
+    background-image: url("/Affamato/source/bg3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:left;
+    width:100%;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    position:absolute;
+}
