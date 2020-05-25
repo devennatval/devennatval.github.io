@@ -1,0 +1,159 @@
+body{
+	
+	background-image: url("../images/background.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	height:100%;
+
+}
+
+body::after{
+ content:"";
+ background-color: black;
+ opacity: 0.8;
+ top:0;
+ left:0;
+ bottom:0;
+ right:0;
+ position: absolute;
+ z-index: -1;
+}	
+header{
+	padding-top:20px;
+}
+#logo{
+ width:5%;
+ margin-left:1%;
+}
+nav{
+	display:inline-block;
+	width:89%;
+	color:white;
+	
+	text-align:right;
+}
+nav li{
+	display:inline-block;
+	margin-right:150px;
+}
+nav a{
+	font-size:1.5em;
+	text-decoration:none;
+}
+
+
+
+.booking-form-box{
+	max-width: 1000px;
+	width: 60%;
+	min-height: 400px;
+	max-height: 50%;
+	border: 1px solid #ced4da;
+	margin: 10% auto 0;
+	margin-top:0px;
+}
+
+
+
+.radio-btn{
+	margin-left: 30px;
+	color: #fff;
+
+}
+
+.radio-btn .btn{
+	margin: 20px 10px 20px 0;
+	box-shadow: none;
+}
+
+.radio-btn .btn::after{
+	content: '';
+	height: 15px;
+	width: 15px;
+	top: -2px;
+	left: -1px;
+	background-color: #fff;
+	position: relative;
+	display: inline-block;
+	border: 3px solid #fff;
+	visibility: visible;
+	border-radius: 50%;
+}
+
+.radio-btn .btn:checked::after{
+	content: '';
+	background-color: #000;
+	transition: 0.5s;
+}
+
+.radio-btn span{
+	color:#fff;
+	margin-right: 5px;
+	font-size: 12px;
+}
+
+.booking-form{
+	padding: 0 30px 20px;
+}
+
+.booking-form label{
+	margin-bottom: 5px;
+	margin-top: 10px;
+	font-size: 16px;
+	color: #fff;
+	padding: 7.5px 0px 10px 2.5px;
+}
+
+
+.form-control{
+	font-size: 12px;
+	border-radius: 0;
+	color: #fff;
+	background: transparent;
+	box-shadow: none;
+}
+
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 20px 20px 0px 20px;
+}
+.column2 {
+  float: left;
+  width: 50%;
+  padding: 0px 20px 20px 20px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+#keterangan{
+	color: white;
+	font-size: 12px;
+	top: 30px;
+	position: relative;
+}
+
+.button{
+	max-width: 1000px;
+	width: 60%;
+	max-height: 50%;
+	
+	margin: 10% auto 0;
+	margin-top:20px;
+}
+
+.button button{
+	float: right;
+}
+
+
+
+
