@@ -1,0 +1,28 @@
+body{
+	background-image: url("../welcome1024.jpg");
+	background-repeat: no-repeat;
+	background-color: black;
+}
+
+.wrapper{
+	
+}
+
+.fixFooter{
+	position: fixed;
+	margin-top: 503px;
+	margin-left:-2px;
+	background-color: rgba(128,128,128,0.5);
+	color:white;
+	width: 100%;
+	padding-left: 60px;
+	padding-top: 5px;
+	font-family: sans-serif;
+
+}
+
+.footercontent{
+	display: inline-block;
+	text-align: center;
+}
+
