@@ -37,7 +37,7 @@ body{
     line-height: 2;
 }
 .index-content{
-    background-image: url("/Affamato/source/bg-index.png");
+    background-image: url("../source/bg-index.png");
     background-repeat: no-repeat;
     background-size:cover;
     background-position:center center;
