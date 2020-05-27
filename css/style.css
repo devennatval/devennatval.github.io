@@ -74,7 +74,7 @@ body{
     position: absolute;
     right:0;
     top:0;
-    display:inline-block;
+    display:block;
 }
 .site-nav-menu{
     list-style: none;
@@ -91,15 +91,25 @@ body{
     line-height: 2;
 }
 
+@media only screen and (max-width: 1600px){
+    .site-logo{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .site-nav{
+        position: relative;
+    }
+    .container{
+        text-align: center;
+    }
+}
 .container{
     width: 60%;
     margin:auto;
-    text-align: justify;
     position: relative;
 }
 .site-logo{
-    display:inline-block;
-    margin-left:0;
+    display:block;
     width: 300px;
     transition:0.2s;
 }
@@ -107,12 +117,12 @@ body{
     width: 100%;
 }
 .ourteam-content{
-    background-image: url("../source/team2.jpg");
+    background-image: url("../source/team3.jpg");
     background-repeat: no-repeat;
     background-size:cover;
     background-position:center center;
     width:100%;
-    height:80vh;
+    height:95vh;
     top:0;
     left:0;
     right:0;
@@ -121,7 +131,7 @@ body{
 }
 @keyframes opening{
     0%{
-        transform: translate(0,40px);
+        transform: translate(0,30px);
         filter: opacity(0%);
     }
     100%{
