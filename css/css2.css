@@ -8,11 +8,48 @@ body{
 	
 }
 
+.logo-navbar{
+	top:0;
+    max-width: 100%;
+   	background:-moz-linear-gradient(rgb(128, 128, 128), rgba(255, 255, 255, 0));
+   	/*background-color: rgba(128,128,128,0.5);*/
+}
+
+/*RCD*/
+
+.site-logo{
+    margin-left:0;
+    display: inline;
+}
+.site-logo-btn{
+    filter:invert(100%);
+}
+
+.site-nav-menu{
+    list-style: none;
+    letter-spacing: 1px;
+    padding-left:0;
+    float: right;
+    margin-top: 50px;
+    margin-right: 20px;
+}
+.site-nav-menu li{
+    display: inline-block;
+    margin-right: 5px;
+}
+.site-nav-menu li a{
+    color:white;
+    text-decoration: none;
+    padding: 0.5em 0.5em;
+    font-size:1em;
+}
+/*RCD*/
+
 .fixFooter{
 	position: fixed;
 	margin-top: 503px;
 	margin-left:-2px;
-	background-color: rgba(128,128,128,0.5);
+	background:-moz-linear-gradient(rgba(255, 255, 255, 0.15), rgb(128, 128, 128), rgb(128, 128, 128));
 	color:white;
 	width: 100%;
 	padding-left: 60px;
@@ -21,8 +58,111 @@ body{
 	bottom:0;
 }
 
-.footercontent{
-	display: inline-block;
-	text-align: center;
+.footerlogo{
+	display:inline;
+	float:left;
+	margin-right:8px;
 }
 
+.footer-menu{
+	margin-top:9px;
+	list-style: none;
+    letter-spacing: 1px;
+    padding-left:0;
+    float: left;
+    margin-left:0px;
+}
+
+.footer-menu li{
+	display:inline;
+	margin-right:10px;
+	font-size: 13.8px;
+}
+
+.content-box{
+	margin-left:80px;
+	font-family: sans-serif;
+}
+
+.left-column{
+	display: inline;
+}
+
+.rest-address{
+	color:white;
+	list-style-type: none;
+}
+
+.hours-loc{
+	margin-top:630px;
+	color:white;
+
+}
+
+.hours-loc h1{
+	margin-bottom:0px;
+}
+
+.hours-loc h2{
+	margin-top:0px;
+}
+
+.opening-time{
+	margin-top:0px;
+	color:white;
+	list-style-type: none;
+	margin-left:0px;
+}
+
+.content-box label{
+	color:white;
+	margin-left:39px;
+	position:relative;
+}
+
+.reserve-button a{
+	color: white;
+	position:absolute;
+	margin-left:39px;
+	padding: 10px;
+	text-decoration: none;
+	margin-top:20px;
+	border: 2px solid white;
+	border-radius: 6px;
+}
+
+.reserve-button a:hover{
+	color:black;
+	background-color:white;
+}
+
+.about-us h1{
+	margin-top: 100px;
+	color:white;
+	margin-bottom:0px;
+}
+
+.about-us h2{
+	color:white;
+	margin-top:0px;
+}
+
+.about-us p{
+	font-weight: normal;
+	font-size:17px;
+}
+
+.accolades h1{
+	color:white;
+	margin-bottom:0px;
+}
+
+.accolades h2{
+	color:white;
+	margin-top:0px;
+}
+
+.accolades p{
+	font-weight: normal;
+	font-size:17px;
+}
