@@ -1,0 +1,95 @@
+body{
+    background-color:black;
+    color:black;
+}
+.container{
+    margin-right:auto;
+    max-width: 75rem;
+    margin-left:auto;
+
+}
+.site-logo{
+    margin-left:0;
+    display: inline;
+}
+.site-logo-btn{
+    filter:invert(100%);
+
+}
+.site-header{
+    position: absolute;
+    top:0;
+    right:0;
+    left:0;
+}
+.site-nav-menu{
+    list-style: none;
+    letter-spacing: 1px;
+    padding-left:0;
+    float: right;
+    margin-top: 50px;
+    margin-right: 20px;
+}
+.site-nav-menu li{
+    display: inline-block;
+}
+.site-nav-menu li a{
+    color:white;
+    text-decoration: none;
+    padding: 0.5em 0.5em;
+    font-size:0.8em;
+}
+
+.site-content{
+    background-image: url("/source/bg3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center center;
+    width:100%;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    position:absolute;
+}
+
+
+
+
+
+
+
+
+
+.site-body{
+    position:relative;
+    top:200px;
+    right:0;
+    left:0;
+}
+
+.container-body{
+    margin-right:auto;
+    max-width: 50rem;
+    margin-left:auto;
+    background-color: white;
+    opacity: 50%;
+    text-align: center;
+}
+
+.body-nav-menu{
+    list-style: none;
+    letter-spacing: 1px;
+    padding-left:0%;
+
+}
+.body-nav-menu li{
+    display: inline-block;
+}
+.body-nav-menu li a{
+    color:red;
+    text-decoration: none;
+    padding: 0.5em 0.5em;
+    font-size:1.5em;
+}
+
