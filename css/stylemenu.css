@@ -148,6 +148,7 @@ body{
     text-align: center;
     min-height: 350px;
     padding-top: 2.5px;
+    animation:opening 2s;
 }
 
 #text-wine{

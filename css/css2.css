@@ -1,5 +1,5 @@
 body{
-	/*background-image: url("../welcome1024.jpg");
+	/*background-image: url("../source/welcome1024.jpg");
 	background-repeat: no-repeat;*/
 	background-color:#f6f1ee;
 	;
@@ -16,7 +16,7 @@ body{
 }
 
 .welcome-image{
-	background-image: url("../welcomeNew.jpg");
+	background-image: url("../source/welcomeNew.jpg");
     background-repeat: no-repeat;
     background-size:cover;
     background-position:center center;
@@ -149,34 +149,43 @@ body{
     width: 100%;
 }
 /*New Nav*/
-
+footer{
+    width:100%;
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index:1;
+}
+.footer-container{
+    width:65%;
+    margin:auto;
+    position: relative;
+}
 .fixFooter{
-	position: fixed;
-	margin-top: 503px;
-	margin-left:-2px;
-	background:-moz-linear-gradient(rgba(255, 255, 255, 0.15), rgb(128, 128, 128), rgb(128, 128, 128));
-	color:white;
+    position: fixed;
+    z-index:1;
+    background-color:rgb(250,247,246);
+	color:black;
 	width: 100%;
-	padding-left: 60px;
 	padding-top: 5px;
 	font-family: sans-serif;
-	bottom:0;
+    bottom:0;
 }
 
 .footerlogo{
-	display:inline;
-	float:left;
-	margin-right:8px;
-	margin-top: 3px;
+    display:inline-block;
 }
+.footer-menu-wrap{
+    display:inline-block;
+    position: absolute;
+    right:0;
 
+}
 .footer-menu{
-	margin-top:9px;
+	margin-top:5px;
 	list-style: none;
     letter-spacing: 1px;
-    padding-left:0;
-    float: left;
-    margin-left:0px;
 }
 
 .footer-menu li{
@@ -189,18 +198,24 @@ body{
 }
 
 .content-box{
-	margin-left:80px;
-	font-family: "b612";
-	animation: opening 2s;
+    margin-left:auto;
+    margin-right: auto;
+    width:1100px;
+    font-family: "b612";
 }
-
+.content-box p{
+    line-height: 2;
+}
+.content-box h1{
+    font-family:"kiona";
+    letter-spacing: 0.2rem;
+}
 .left-column{
 	display: inline-block;
 	float:left;
-	width:45%;
+	width:50%;
 	box-sizing:border-box;
 	text-align: justify;
-
 }
 
 .rest-address{
@@ -210,20 +225,14 @@ body{
 }
 
 .hours-loc{
-	margin-top:110vh;
+	margin-top:105vh;
 	color:black;
 
 }
-
 .hours-loc h1{
 	margin-bottom:0px;
-	font-family: "b612";
 }
 
-.hours-loc h2{
-	margin-top:0px;
-
-}
 
 .opening-time{
 	margin-top:0px;
@@ -235,7 +244,6 @@ body{
 
 .content-box label{
 	color:black;
-	margin-left:39px;
 	position:relative;
 	font-family: "b612";
 }
@@ -243,7 +251,6 @@ body{
 .reserve-button a{
 	color:white;
 	position:absolute;
-	margin-left:39px;
 	padding: 10px;
 	text-decoration: none;
 	margin-top:20px;
@@ -260,14 +267,9 @@ body{
 }
 
 .about-us h1{
-	margin-top: 110vh;
+	margin-top: 105vh;
 	color:black;
 	margin-bottom:0px;
-}
-
-.about-us h2{
-	color:black;
-	margin-top:0px;
 }
 
 .about-us p{
@@ -280,10 +282,6 @@ body{
 	margin-bottom:0px;
 }
 
-.accolades h2{
-	color:black;
-	margin-top:0px;
-}
 
 .accolades p{
 	font-weight: normal;
@@ -293,4 +291,12 @@ body{
 .badges{
 	display:inline;
 	margin-right: 10px;
+}
+h1::after{
+    content:"";
+    display:block;
+    width: 40px;
+    height: 3px;
+    background:black;
+    margin: 1rem auto 2rem 0;
 }

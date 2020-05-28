@@ -4,21 +4,21 @@ body{
 }
 .index-header{
     position: relative;
+    height:100vh;
 }
 .index-container{
     position:absolute;
-    margin-right:auto;
-    margin-left:5vw;
-    margin-top: 70vh;
+    margin-left:4vw;
     width: 50%;
+    bottom: 0;
+    transform: translateY(-5rem);
 }
 .index-site-logo{
     display:inline-block;
     margin-left:0;
-    max-width: 50%;
 }
 .index-site-logo-btn{
-    max-width: 100%;
+    width: 65%;
     filter:invert(100%);
 }
 .index-site-nav-menu{
@@ -34,8 +34,9 @@ body{
     color:white;
     text-decoration: none;
     padding: 0.5em 0.5em;
-    font-size:0.9rem;
+    font-size:1em;
     line-height: 2;
+    font-family: "kiona";
 }
 .index-content{
     background-image: url("../source/bg-index.png");
@@ -89,6 +90,7 @@ body{
     text-decoration: none;
     padding: 0.5em 0.5em;
     line-height: 2;
+    font-family: "kiona";
 }
 
 @media only screen and (max-width: 1600px){
@@ -129,6 +131,69 @@ body{
     position:absolute;
     animation:opening 2s;
 }
+
+.main-container{
+    padding-top:5rem;
+    padding-bottom: 5rem;
+}
+h2{
+    font-family: "b612";
+}
+h2::after{
+    content:"";
+    display:block;
+    width: 40px;
+    height: 3px;
+    background:black;
+    margin: 1rem auto;
+}
+footer{
+    width:100%;
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index:1;
+}
+.footer-container{
+    width:65%;
+    margin:auto;
+    position: relative;
+}
+.fixFooter{
+    position: fixed;
+    z-index:1;
+    background-color:rgb(250,247,246);
+	color:black;
+	width: 100%;
+	padding-top: 5px;
+	font-family: sans-serif;
+    bottom:0;
+}
+
+.footerlogo{
+    display:inline-block;
+}
+.footer-menu-wrap{
+    display:inline-block;
+    position: absolute;
+    right:0;
+
+}
+.footer-menu{
+	margin-top:5px;
+	list-style: none;
+    letter-spacing: 1px;
+}
+
+.footer-menu li{
+	display:inline;
+	margin-right:10px;
+	font-size: 14.8px;
+	font-family: "kiona";
+	font-weight: bold;
+	margin-left: 15px;
+}
 @keyframes opening{
     0%{
         transform: translate(0,30px);
@@ -139,4 +204,11 @@ body{
         filter: opacity(100%);
     }
 }
-
+@font-face{
+    font-family: "b612";
+    src:url("../source/font/B612.ttf")
+}
+@font-face{
+    font-family: "kiona";
+    src:url("../source/font/Kiona.ttf")
+}
