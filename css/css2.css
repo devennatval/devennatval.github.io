@@ -5,8 +5,13 @@ body{
 	;
 }
 
+@font-face{
+    font-family: "kiona";
+    src:url("../source/font/Kiona.ttf")
+}
+
 .welcome-image{
-	background-image: url("../welcome1024.jpg");
+	background-image: url("../welcomeNew.jpg");
     background-repeat: no-repeat;
     background-size:cover;
     background-position:center center;
@@ -110,6 +115,7 @@ body{
     text-decoration: none;
     padding: 0.5em 0.5em;
     line-height: 2;
+    font-family: "kiona";
 }
 
 @media only screen and (max-width: 1600px){
@@ -170,7 +176,9 @@ body{
 .footer-menu li{
 	display:inline;
 	margin-right:10px;
-	font-size: 13.8px;
+	font-size: 14.8px;
+	font-family: "kiona";
+	font-weight: bold;
 }
 
 .content-box{
@@ -193,7 +201,7 @@ body{
 }
 
 .hours-loc{
-	margin-top:630px;
+	margin-top:110vh;
 	color:black;
 
 }
@@ -238,7 +246,7 @@ body{
 }
 
 .about-us h1{
-	margin-top: 630px;
+	margin-top: 110vh;
 	color:black;
 	margin-bottom:0px;
 }
