@@ -1,5 +1,5 @@
 body{
-	/*background-image: url("../welcome1024.jpg");
+	/*background-image: url("../source/welcome1024.jpg");
 	background-repeat: no-repeat;*/
 	background-color:#f6f1ee;
 	;
@@ -16,7 +16,7 @@ body{
 }
 
 .welcome-image{
-	background-image: url("../welcomeNew.jpg");
+	background-image: url("../source/welcomeNew.jpg");
     background-repeat: no-repeat;
     background-size:cover;
     background-position:center center;
