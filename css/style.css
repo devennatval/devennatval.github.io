@@ -148,37 +148,42 @@ h2::after{
     margin: 1rem auto;
 }
 footer{
+    width:100%;
     position:absolute;
     left:0;
     right:0;
     bottom:0;
     z-index:1;
-    width:100%;
+}
+.footer-container{
+    width:65%;
+    margin:auto;
+    position: relative;
 }
 .fixFooter{
     position: fixed;
+    z-index:1;
     background-color:rgb(250,247,246);
 	color:black;
 	width: 100%;
-	padding-left: 60px;
 	padding-top: 5px;
 	font-family: sans-serif;
-	bottom:0;
+    bottom:0;
 }
 
 .footerlogo{
-	float:left;
-	margin-right:8px;
-	margin-top: 3px;
+    display:inline-block;
 }
+.footer-menu-wrap{
+    display:inline-block;
+    position: absolute;
+    right:0;
 
+}
 .footer-menu{
-	margin-top:9px;
+	margin-top:5px;
 	list-style: none;
     letter-spacing: 1px;
-    padding-left:0;
-    float: left;
-    margin-left:0px;
 }
 
 .footer-menu li{
