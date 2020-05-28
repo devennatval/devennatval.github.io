@@ -10,6 +10,11 @@ body{
     src:url("../source/font/Kiona.ttf")
 }
 
+@font-face{
+    font-family: "b612";
+    src:url("../source/font/B612.ttf")
+}
+
 .welcome-image{
 	background-image: url("../welcomeNew.jpg");
     background-repeat: no-repeat;
@@ -162,6 +167,7 @@ body{
 	display:inline;
 	float:left;
 	margin-right:8px;
+	margin-top: 3px;
 }
 
 .footer-menu{
@@ -179,11 +185,12 @@ body{
 	font-size: 14.8px;
 	font-family: "kiona";
 	font-weight: bold;
+	margin-left: 15px;
 }
 
 .content-box{
 	margin-left:80px;
-	font-family: sans-serif;
+	font-family: "b612";
 }
 
 .left-column{
@@ -198,6 +205,7 @@ body{
 .rest-address{
 	color:black;
 	list-style-type: none;
+	font-family: "b612";
 }
 
 .hours-loc{
@@ -208,10 +216,12 @@ body{
 
 .hours-loc h1{
 	margin-bottom:0px;
+	font-family: "b612";
 }
 
 .hours-loc h2{
 	margin-top:0px;
+
 }
 
 .opening-time{
@@ -219,12 +229,14 @@ body{
 	color:black;
 	list-style-type: none;
 	margin-left:0px;
+	font-family: "b612";
 }
 
 .content-box label{
 	color:black;
 	margin-left:39px;
 	position:relative;
+	font-family: "b612";
 }
 
 .reserve-button a{
@@ -238,6 +250,7 @@ body{
 	background-color: black; 
 	border-radius: 6px;
 	transition:0.2s;
+	font-family: "b612";
 }
 
 .reserve-button a:hover{
@@ -274,4 +287,9 @@ body{
 .accolades p{
 	font-weight: normal;
 	font-size:17px;
+}
+
+.badges{
+	display:inline;
+	margin-right: 10px;
 }
