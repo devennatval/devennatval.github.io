@@ -5,13 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="css/reservationCss.css">
 </head>
 <body>
-
-	<div class="welcome-image"></div>
-
-	<div class="wrapper">
-		
-
-		<header>
+    <header>
         <div class="site-header">
             <div id="site-header-primary">
                 <div class="container">
@@ -22,7 +16,7 @@
                     </div>
                     <nav class="site-nav">
                         <ul class="site-nav-menu">
-                            <li><a href="">WELCOME</a></li>
+                            <li><a href="welcomepage.html">WELCOME</a></li>
                             <li><a href="">MENU</a></li>
                             <li><a href="">PRIVATE DINING</a></li>
                             <li><a href="ourteam.html">OUR TEAM</a></li>
@@ -34,43 +28,49 @@
         </div>
     </header>
 
-
-
-
-		<div class="fixFooter">
-			<div class="footerlogo">
-					<img class="social-media-logo" src="source/footerlogo2.png">
-			</div>
-			
-			<ul class="footer-menu">
-				<li>470 PACIFIC AVENUE, SAN FRANCISCO</li>
-				<li>415.775.8500</li>
-				<li>PRESS</li>
-				<li>CAREERS</li>
-				<li>GIFT CARDS</li>
-				<li>CREDITS</li>
-				<li>SIGNUP FOR UPDATES</li>
-			</ul>
-			
-		</div>
-
+	<div class="wrapper">
+        <div class="open-image">        
+            <div class="welcome-image"></div>
+        </div>
 		<div class="content-box">
 			
 				<div class="guest-policies">
 					<h1>HOURS & GUEST POLICIES</h1>
-					<h2>______<h2>
 					<p>Quince serves dinner Tuesday through Saturday and is closed Sunday and Monday. We are open for private dining 7 days a week. Our hours are Tuesday through Thursday from 5:30 p.m. to 9:00 p.m., Friday and Saturday from 5:00 p.m. to 9:00 p.m.</p>
-					<p>To make a reservation please call 415.775.8500, Monday through Saturday from 10:00 a.m. to 6:00 p.m. or reserve online through OpenTable using the links below. Our Guest Services team can also be reached via email at info@quincerestaurant.com.</p>
+                    
+                    <p>To make a reservation please call 415.775.8500, Monday through Saturday from 10:00 a.m. to 6:00 p.m. or reserve online through OpenTable using the links below. Our Guest Services team can also be reached via email at info@quincerestaurant.com.</p>
 				</div>
 
-				<div class="reservation-image-2">
-					<img src="source/reservation02.jpg">
+				<div class="reservation-image">
+					<img src="source/reservation02.jpg" width="100%">
 				</div>
-				
-				<div class="reserve-button">
-					<a href="#">MAKE A RESERVATION</a>
+				<div class="room-type">
+                    <h1>DINING ROOM RESERVATIONS</h1>
+                    <p>Main Dining Room reservations can be made up to three months in advance.
+                    <br><br>
+                    Quince features a nightly tasting menu in the Main Dining Room that highlights the seasonal bounty of Northern California. The cost of the tasting menu is 298 dollars per person.
+                    <br><br>
+                    When making your reservation, please indicate any dietary restrictions. Due to the complexity of the menu, it may not be possible to accommodate all restrictions and food allergies.
+                    <br><br>
+                    All reservations are confirmed by phone at least three days prior. Any cancellations must be made at least 48 hours prior to the time of the reservation to avoid a 298 dollar (plus tax) per person late cancellation charge; this policy applies to same day reservations as well. If we are unable to confirm with you, your reservation will be cancelled one day prior to the reservation at 5:00 pm. We thank you for your understanding.</p>
+                    <p class="reserve-button"><a href="#">MAKE A RESERVATION</a>
+                    </p>
+                </div>
+                <div class="reservation-image">
+					<img src="source/reservation03.jpg" width="100%">
 				</div>
-
+                <div class="room-type last">
+                    <h1>TERRACE RESERVATIONS</h1>
+                    <p>Main Dining Room reservations can be made up to three months in advance.
+                    <br><br>
+                    Quince features a nightly tasting menu in the Main Dining Room that highlights the seasonal bounty of Northern California. The cost of the tasting menu is 298 dollars per person.
+                    <br><br>
+                    When making your reservation, please indicate any dietary restrictions. Due to the complexity of the menu, it may not be possible to accommodate all restrictions and food allergies.
+                    <br><br>
+                    All reservations are confirmed by phone at least three days prior. Any cancellations must be made at least 48 hours prior to the time of the reservation to avoid a 298 dollar (plus tax) per person late cancellation charge; this policy applies to same day reservations as well. If we are unable to confirm with you, your reservation will be cancelled one day prior to the reservation at 5:00 pm. We thank you for your understanding.</p>
+                    <p class="reserve-button"><a href="#">MAKE A RESERVATION</a>
+                    </p>
+                </div>
 			</div>
 
 			
@@ -82,7 +82,29 @@
 
 		</div>
 
-	</div>
+    </div>
+    <footer>
+		<div class="fixFooter">
+			<div class="footer-container">
+				<div class="footerlogo">
+					<img class="social-media-logo" src="source/footerlogo2.png">
+				</div>
+				<div class="footer-menu-wrap">
+                    <ul class="footer-menu">
+                        <li>470 PACIFIC AVENUE, SAN FRANCISCO</li>
+                        <li>415.775.8500</li>
+                        <li>PRESS</li>
+                        <li>CAREERS</li>
+                        <li>GIFT CARDS</li>
+                        <li>CREDITS</li>
+                        <li>SIGNUP FOR UPDATES</li>
+                    </ul>
+                </div>
+				
+			</div>
+			
+		</div>
+	</footer>
 	<script>
         $(window).on('unload', function() {
             $(window).scrollTop(0);
