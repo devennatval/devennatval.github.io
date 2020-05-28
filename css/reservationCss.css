@@ -1,0 +1,244 @@
+body{
+	/*background-image: url("../welcome1024.jpg");
+	background-repeat: no-repeat;*/
+	background-color:#f6f1ee;
+	;
+}
+
+@font-face{
+    font-family: "kiona";
+    src:url("../source/font/Kiona.ttf")
+}
+
+@font-face{
+    font-family: "b612";
+    src:url("../source/font/B612.ttf")
+}
+
+.welcome-image{
+	background-image: url("../reservation01.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center center;
+    width:100%;
+    height:95vh;
+    top:0;
+    left:0;
+    right:0;
+    position:absolute;
+    animation:opening 2s;
+}
+
+@keyframes opening{
+    0%{
+        transform: translate(0,30px);
+        filter: opacity(0%);
+    }
+    100%{
+        transform: translate(0,0);
+        filter: opacity(100%);
+    }
+}
+
+.wrapper{
+	
+}
+
+.logo-navbar{
+	top:0;
+    max-width: 100%;
+   	background:-moz-linear-gradient(rgb(128, 128, 128), rgba(255, 255, 255, 0));
+   	/*background-color: rgba(128,128,128,0.5);*/
+}
+
+/*RCD*/
+/*
+.site-logo{
+    margin-left:0;
+    display: inline;
+}
+.site-logo-btn{
+    filter:invert(100%);
+}
+
+.site-nav-menu{
+    list-style: none;
+    letter-spacing: 1px;
+    padding-left:0;
+    float: right;
+    margin-top: 50px;
+    margin-right: 20px;
+}
+.site-nav-menu li{
+    display: inline-block;
+    margin-right: 5px;
+}
+.site-nav-menu li a{
+    color:white;
+    text-decoration: none;
+    padding: 0.5em 0.5em;
+    font-size:1em;
+}
+*/
+/*RCD*/
+
+/*New Nav*/
+.site-header{
+    width: 100%;
+    position: absolute;
+    top:0;
+    right:0;
+    left:0;
+    z-index: 1;
+}
+#site-header-primary{
+    position: fixed;
+    z-index: 1;
+    padding-top:1.5rem;
+    padding-bottom: 1.5rem;
+    width: 100%;
+    transition:0.2s;
+    vertical-align: middle;
+    background-image: linear-gradient(rgb(246, 241, 238), rgba(255, 255, 255, 0));
+}
+.site-nav{
+    position: absolute;
+    right:0;
+    top:0;
+    display:block;
+}
+.site-nav-menu{
+    list-style: none;
+    letter-spacing: 0.2em;
+    font-size:0.9rem;
+}
+.site-nav-menu li{
+    display: inline-block;
+}
+.site-nav-menu li a{
+    color:black;
+    text-decoration: none;
+    padding: 0.5em 0.5em;
+    line-height: 2;
+    font-family: "kiona";
+}
+
+@media only screen and (max-width: 1600px){
+    .site-logo{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .site-nav{
+        position: relative;
+    }
+    .container{
+        text-align: center;
+    }
+}
+.container{
+    width: 60%;
+    margin:auto;
+    position: relative;
+}
+.site-logo{
+    display:block;
+    width: 300px;
+    transition:0.2s;
+}
+.site-logo-btn{
+    width: 100%;
+}
+/*New Nav*/
+
+.fixFooter{
+	position: fixed;
+	margin-top: 503px;
+	margin-left:-2px;
+	background:-moz-linear-gradient(rgba(255, 255, 255, 0.15), rgb(128, 128, 128), rgb(128, 128, 128));
+	color:white;
+	width: 100%;
+	padding-left: 60px;
+	padding-top: 5px;
+	font-family: sans-serif;
+	bottom:0;
+}
+
+.footerlogo{
+	display:inline;
+	float:left;
+	margin-right:8px;
+	margin-top: 3px;
+}
+
+.footer-menu{
+	margin-top:9px;
+	list-style: none;
+    letter-spacing: 1px;
+    padding-left:0;
+    float: left;
+    margin-left:0px;
+}
+
+.footer-menu li{
+	display:inline;
+	margin-right:10px;
+	font-size: 12.8px;
+	font-family: "kiona";
+	font-weight: bold;
+	margin-left: 15px;
+}
+
+.content-box{
+	margin-left:80px;
+	font-family: "b612";
+	animation: opening 2s;
+}
+
+.reserve-button a{
+	color:white;
+	position:absolute;
+	margin-left:39px;
+	padding: 10px;
+	text-decoration: none;
+	margin-top:20px;
+	border: 2px solid black;
+	background-color: black; 
+	border-radius: 6px;
+	transition:0.2s;
+	font-family: "b612";
+}
+
+.guest-policies{
+    margin-top:105vh;
+    width: 50%;
+    margin-left: 49vh;
+}
+
+.guest-policies h1, h2{
+    text-align: center;
+}
+
+.guest-policies h1{
+    margin-bottom: 0px;
+}
+
+.guest-policies h2{
+    margin-top: 0px;
+}
+
+.guest-policies p{
+    font-size: 15px;
+    text-align: justify;
+    font-weight: normal;
+}
+
+.reservation-image-2{
+    margin-left: 0px;
+
+}
+
+.reserve-button a:hover{
+	color:black;
+	background-color:white;
+}
+
