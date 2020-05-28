@@ -16,7 +16,7 @@ body{
 }
 
 .welcome-image{
-	background-image: url("../welcomeNew.jpg");
+	background-image: url("../reservation01.jpg");
     background-repeat: no-repeat;
     background-size:cover;
     background-position:center center;
@@ -182,7 +182,7 @@ body{
 .footer-menu li{
 	display:inline;
 	margin-right:10px;
-	font-size: 14.8px;
+	font-size: 12.8px;
 	font-family: "kiona";
 	font-weight: bold;
 	margin-left: 15px;
@@ -192,52 +192,6 @@ body{
 	margin-left:80px;
 	font-family: "b612";
 	animation: opening 2s;
-}
-
-.left-column{
-	display: inline-block;
-	float:left;
-	width:45%;
-	box-sizing:border-box;
-	text-align: justify;
-
-}
-
-.rest-address{
-	color:black;
-	list-style-type: none;
-	font-family: "b612";
-}
-
-.hours-loc{
-	margin-top:110vh;
-	color:black;
-
-}
-
-.hours-loc h1{
-	margin-bottom:0px;
-	font-family: "b612";
-}
-
-.hours-loc h2{
-	margin-top:0px;
-
-}
-
-.opening-time{
-	margin-top:0px;
-	color:black;
-	list-style-type: none;
-	margin-left:0px;
-	font-family: "b612";
-}
-
-.content-box label{
-	color:black;
-	margin-left:39px;
-	position:relative;
-	font-family: "b612";
 }
 
 .reserve-button a{
@@ -254,43 +208,37 @@ body{
 	font-family: "b612";
 }
 
+.guest-policies{
+    margin-top:105vh;
+    width: 50%;
+    margin-left: 49vh;
+}
+
+.guest-policies h1, h2{
+    text-align: center;
+}
+
+.guest-policies h1{
+    margin-bottom: 0px;
+}
+
+.guest-policies h2{
+    margin-top: 0px;
+}
+
+.guest-policies p{
+    font-size: 15px;
+    text-align: justify;
+    font-weight: normal;
+}
+
+.reservation-image-2{
+    margin-left: 0px;
+
+}
+
 .reserve-button a:hover{
 	color:black;
 	background-color:white;
 }
 
-.about-us h1{
-	margin-top: 110vh;
-	color:black;
-	margin-bottom:0px;
-}
-
-.about-us h2{
-	color:black;
-	margin-top:0px;
-}
-
-.about-us p{
-	font-weight: normal;
-	font-size:17px;
-}
-
-.accolades h1{
-	color:black;
-	margin-bottom:0px;
-}
-
-.accolades h2{
-	color:black;
-	margin-top:0px;
-}
-
-.accolades p{
-	font-weight: normal;
-	font-size:17px;
-}
-
-.badges{
-	display:inline;
-	margin-right: 10px;
-}
