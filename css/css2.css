@@ -149,12 +149,17 @@ body{
     width: 100%;
 }
 /*New Nav*/
-
+footer{
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index:1;
+    width:100%;
+}
 .fixFooter{
-	position: fixed;
-	margin-top: 503px;
-	margin-left:-2px;
-	background:rgb(250, 247, 246);
+    position: fixed;
+    background-color:rgb(250,247,246);
 	color:black;
 	width: 100%;
 	padding-left: 60px;
@@ -164,7 +169,6 @@ body{
 }
 
 .footerlogo{
-	display:inline;
 	float:left;
 	margin-right:8px;
 	margin-top: 3px;
