@@ -203,8 +203,8 @@ footer{
 .content-box{
     position: absolute;
     left:0;
+    right:0;
 	font-family: "b612";
-	animation: opening 2s;
 }
 
 
@@ -214,6 +214,9 @@ footer{
     margin-right:auto;
     padding:5rem .9rem 4.5rem .9rem;
     text-align:center;
+    opacity: 0%;
+    transform: translateY(50px);
+    transition:1s;
 }
 
 .guest-policies h1,.room-type h1{
@@ -233,8 +236,6 @@ footer{
 
 .reserve-button a{
 	color:black;
-	position:absolute;
-	margin-left:200px;
 	padding: 10px;
 	text-decoration: none;
 	margin-top:0px;
@@ -247,9 +248,18 @@ footer{
 
 .reservation-image{
     width:100%;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center center;
+    width:100%;
+    height:95vh;
+    opacity: 0%;
+    transform: translateY(50px);
+    transition:1s;
 }
 .reserve-button{
     text-align: center;
+    margin-top:5vh;
 }
 .reserve-button a:hover{
 	color:white;
