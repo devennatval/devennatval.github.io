@@ -232,18 +232,19 @@ footer{
 }
 
 .reserve-button a{
-	color:white;
+	color:black;
 	position:absolute;
-	margin-left:39px;
+	margin-left:200px;
 	padding: 10px;
 	text-decoration: none;
-	margin-top:20px;
-	border: 2px solid black;
-	background-color: black; 
-	border-radius: 6px;
+	margin-top:0px;
+	border: 1px solid black;
+	background-color: #f6f1ee; 
+	border-radius: 0px;
 	transition:0.2s;
 	font-family: "b612";
 }
+
 .reservation-image{
     width:100%;
 }
@@ -251,8 +252,8 @@ footer{
     text-align: center;
 }
 .reserve-button a:hover{
-	color:black;
-	background-color:white;
+	color:white;
+	background-color:black;
 }
 h1::after{
     content:"";
