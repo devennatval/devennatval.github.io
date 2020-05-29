@@ -40,10 +40,6 @@ body{
     }
 }
 
-.wrapper{
-	
-}
-
 .logo-navbar{
 	top:0;
     max-width: 100%;
@@ -203,8 +199,8 @@ footer{
 .content-box{
     position: absolute;
     left:0;
+    right:0;
 	font-family: "b612";
-	animation: opening 2s;
 }
 
 
@@ -214,6 +210,9 @@ footer{
     margin-right:auto;
     padding:5rem .9rem 4.5rem .9rem;
     text-align:center;
+    opacity: 0%;
+    transform: translateY(50px);
+    transition:1s;
 }
 
 .guest-policies h1,.room-type h1{
@@ -233,8 +232,6 @@ footer{
 
 .reserve-button a{
 	color:black;
-	position:absolute;
-	margin-left:200px;
 	padding: 10px;
 	text-decoration: none;
 	margin-top:0px;
@@ -247,9 +244,18 @@ footer{
 
 .reservation-image{
     width:100%;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center center;
+    width:100%;
+    height:95vh;
+    opacity: 0%;
+    transform: translateY(50px);
+    transition:1s;
 }
 .reserve-button{
     text-align: center;
+    margin-top:5vh;
 }
 .reserve-button a:hover{
 	color:white;
@@ -265,4 +271,36 @@ h1::after{
 }
 .last{
     margin-bottom: 10vh;
+}
+
+#blur.active
+{
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+
+#popup
+{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0,0,0,.30);
+    background:#fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+
+}
+
+#popup.active
+{
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+
 }
