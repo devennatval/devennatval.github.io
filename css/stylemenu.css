@@ -131,11 +131,9 @@ footer{
     margin-left: 15px;
 }
 
-
-
-
-
-
+.wrapper{
+    background-color:#f6f1ee;
+}
 
 
 
@@ -144,6 +142,7 @@ footer{
     top:200px;
     right:0;
     left:0;
+    background-color:#f6f1ee;
 }
 
 .container-body{
@@ -156,13 +155,46 @@ footer{
     animation:opening 2s;
 }
 
-#text-wine, #text-menu{
+.go-back a{
+    color:black;
+    padding: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    margin-top:0px;
+    border: 1px solid black;
+    background-color: #f6f1ee; 
+    border-radius: 0px;
+    transition:0.2s;
+    font-family: "b612";
+}
+
+.go-back a:hover{
+    color:white;
+    background-color:black;
+}
+
+#text-menu{
     font-size: 1rem;
     text-align: center;
     font-weight: normal;
     line-height: 2;
     margin-bottom:1rem;
+    margin-top:14vh;
     color:rgb(100,100,100);
+    font-family:"b612";
+}
+
+#text-wine{
+    font-size: 1rem;
+    text-align: justify;
+    font-weight: normal;
+    line-height: 2;
+    margin-bottom:1rem;
+    margin-top:14vh;
+    color:rgb(100,100,100);
+    font-family:"b612";
+
 }
 
 .body-nav-menu{
