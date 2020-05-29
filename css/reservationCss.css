@@ -273,7 +273,7 @@ h1::after{
     margin-bottom: 10vh;
 }
 
-#blur.active
+.blur
 {
     filter: blur(20px);
     pointer-events: none;
@@ -293,7 +293,6 @@ h1::after{
     visibility: hidden;
     opacity: 0;
     transition: 0.5s;
-
 }
 
 #popup.active
@@ -301,6 +300,4 @@ h1::after{
     top: 50%;
     visibility: visible;
     opacity: 1;
-    transition: 0.5s;
-
 }
