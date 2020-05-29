@@ -53,7 +53,7 @@
 			<label>Open for private dining everyday.</label>
 			
 			<div class="reserve-button">
-				<a href="#">MAKE A RESERVATION</a>
+				<a href="reservations.html">MAKE A RESERVATION</a>
 			</div>
 
 			</div>
@@ -120,6 +120,12 @@
             document.getElementsByClassName("site-logo")[0].style.width = "300px";
             document.getElementById("site-header-primary").style.paddingTop = "1.5rem";
             document.getElementById("site-header-primary").style.paddingBottom = "1.5rem";
+          }
+          console.log(document.documentElement.scrollTop);
+          if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+
+            document.getElementsByClassName("content-box")[0].style.opacity = "100%";
+            document.getElementsByClassName("content-box")[0].style.transform = "translateY(0px)";
           }
         }
         </script>
