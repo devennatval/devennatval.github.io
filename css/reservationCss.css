@@ -150,48 +150,85 @@ body{
 }
 /*New Nav*/
 
+footer{
+    width:100%;
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index:1;
+}
+.footer-container{
+    width:65%;
+    margin:auto;
+    position: relative;
+}
 .fixFooter{
-	position: fixed;
-	margin-top: 503px;
-	margin-left:-2px;
-	background:-moz-linear-gradient(rgba(255, 255, 255, 0.15), rgb(128, 128, 128), rgb(128, 128, 128));
-	color:white;
+    position: fixed;
+    z-index:1;
+    background-color:rgb(250,247,246);
+	color:black;
 	width: 100%;
-	padding-left: 60px;
 	padding-top: 5px;
 	font-family: sans-serif;
-	bottom:0;
+    bottom:0;
 }
 
 .footerlogo{
-	display:inline;
-	float:left;
-	margin-right:8px;
-	margin-top: 3px;
+    display:inline-block;
 }
+.footer-menu-wrap{
+    display:inline-block;
+    position: absolute;
+    right:0;
 
+}
 .footer-menu{
-	margin-top:9px;
+	margin-top:5px;
 	list-style: none;
     letter-spacing: 1px;
-    padding-left:0;
-    float: left;
-    margin-left:0px;
 }
 
 .footer-menu li{
 	display:inline;
 	margin-right:10px;
-	font-size: 12.8px;
+	font-size: 14.8px;
 	font-family: "kiona";
 	font-weight: bold;
 	margin-left: 15px;
 }
-
+.open-image{
+    min-height: 95vh;
+}
 .content-box{
-	margin-left:80px;
+    position: absolute;
+    left:0;
 	font-family: "b612";
 	animation: opening 2s;
+}
+
+
+.guest-policies, .room-type{
+    width: 50%;
+    margin-left: auto;
+    margin-right:auto;
+    padding:5rem .9rem 4.5rem .9rem;
+    text-align:center;
+}
+
+.guest-policies h1,.room-type h1{
+    margin-bottom: 0px;
+    font-family: "kiona";
+}
+
+
+.guest-policies p, .room-type p{
+    font-size: 1rem;
+    text-align: justify;
+    font-weight: normal;
+    line-height: 2;
+    margin-bottom:1rem;
+    color:rgb(100,100,100);
 }
 
 .reserve-button a{
@@ -207,38 +244,24 @@ body{
 	transition:0.2s;
 	font-family: "b612";
 }
-
-.guest-policies{
-    margin-top:105vh;
-    width: 50%;
-    margin-left: 49vh;
+.reservation-image{
+    width:100%;
 }
-
-.guest-policies h1, h2{
+.reserve-button{
     text-align: center;
 }
-
-.guest-policies h1{
-    margin-bottom: 0px;
-}
-
-.guest-policies h2{
-    margin-top: 0px;
-}
-
-.guest-policies p{
-    font-size: 15px;
-    text-align: justify;
-    font-weight: normal;
-}
-
-.reservation-image-2{
-    margin-left: 0px;
-
-}
-
 .reserve-button a:hover{
 	color:black;
 	background-color:white;
 }
-
+h1::after{
+    content:"";
+    display:block;
+    width: 40px;
+    height: 3px;
+    background:black;
+    margin: 1rem auto;
+}
+.last{
+    margin-bottom: 10vh;
+}
