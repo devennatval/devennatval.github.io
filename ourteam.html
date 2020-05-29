@@ -38,17 +38,30 @@
 		<div class="content-box">
             <div class="our-team">
                 <h1>OUR TEAM</h1>
-                <ul class="team-box">
-                    <li>
-
-                    </li>
-                    <li>
-
-                    </li>
-                    <li>
-                        
-                    </li>
-                </ul>
+                <div class="team-box">
+                    <div class="team-box-person">
+                        <div class="photo-box" style='background-image:url("source/deven.png")'>
+                        </div>
+                        <h2>Deven Nathanael</h2>
+                        <h3>CEO</h3>
+                        <h3>2201775594</h3>
+                    </div>
+                    <div class="team-box-person">
+                        <div class="photo-box" style='background-image:url("source/richard.png")'>
+                        </div>
+                        <h2>Richard Lionggiwijaya</h2>
+                        <h3>CEO</h3>
+                        <h3>2201761821</h3>
+                    </div>
+                    <div class="team-box-person">
+                        <div class="photo-box" style='background-image:url("source/valdy.png")'>
+                        </div>
+                        <h2>Valdy Ekaputra</h2>
+                        <h3>CEO</h3>
+                        <h3>2201764262</h3>
+                    </div>
+                    
+                </div>
             </div>
             
 		</div>
@@ -77,6 +90,7 @@
         window.onscroll = function() {scrollFunction()};
         
         function scrollFunction() {
+        console.log(document.documentElement.scrollTop);
           if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
             document.getElementById("site-header-primary").style.backgroundImage = "";
             document.getElementById("site-header-primary").style.backgroundColor = "rgba(246, 241, 238, 0.9)";
@@ -90,6 +104,23 @@
             document.getElementById("site-header-primary").style.paddingTop = "1.5rem";
             document.getElementById("site-header-primary").style.paddingBottom = "1.5rem";
 
+          }
+          if (document.body.scrollTop > 130 || document.documentElement.scrollTop > 130){
+            document.getElementsByClassName("our-team")[0].style.opacity = "1";
+            document.getElementsByClassName("our-team")[0].style.transform = "translateY(0px)";
+          }
+          if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300){
+            document.getElementsByClassName("team-box-person")[0].style.opacity = "1";
+            document.getElementsByClassName("team-box-person")[0].style.transform = "translateY(0px)";
+
+            setTimeout(function(){
+                document.getElementsByClassName("team-box-person")[1].style.opacity = "1";
+                document.getElementsByClassName("team-box-person")[1].style.transform = "translateY(0px)";
+            },300);
+            setTimeout(function(){
+                document.getElementsByClassName("team-box-person")[2].style.opacity = "1";
+                document.getElementsByClassName("team-box-person")[2].style.transform = "translateY(0px)";
+            },300);
           }
         }
         
