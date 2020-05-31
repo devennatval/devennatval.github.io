@@ -306,7 +306,7 @@ h1::after{
     background:#fff;
     visibility: hidden;
     opacity: 0;
-    transition: 0.5s;
+    transition: 2s;
     overflow: auto;
 }
 
