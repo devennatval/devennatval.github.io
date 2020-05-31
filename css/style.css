@@ -1,3 +1,11 @@
+@font-face{
+    font-family: "b612";
+    src:url("../source/font/B612.ttf")
+}
+@font-face{
+    font-family: "kiona";
+    src:url("../source/font/Kiona.ttf")
+}
 body{
     background-color:#f6f1ee;
     color:black;
@@ -131,22 +139,22 @@ body{
     position:absolute;
     animation:opening 2s;
 }
+@keyframes opening{
+    0%{
+        transform: translate(0,30px);
+        filter: opacity(0%);
+    }
+    100%{
+        transform: translate(0,0);
+        filter: opacity(100%);
+    }
+}
 
 .main-container{
     padding-top:5rem;
     padding-bottom: 5rem;
 }
-h2{
-    font-family: "b612";
-}
-h2::after{
-    content:"";
-    display:block;
-    width: 40px;
-    height: 3px;
-    background:black;
-    margin: 1rem auto;
-}
+
 footer{
     width:100%;
     position:absolute;
@@ -193,22 +201,4 @@ footer{
 	font-family: "kiona";
 	font-weight: bold;
 	margin-left: 15px;
-}
-@keyframes opening{
-    0%{
-        transform: translate(0,30px);
-        filter: opacity(0%);
-    }
-    100%{
-        transform: translate(0,0);
-        filter: opacity(100%);
-    }
-}
-@font-face{
-    font-family: "b612";
-    src:url("../source/font/B612.ttf")
-}
-@font-face{
-    font-family: "kiona";
-    src:url("../source/font/Kiona.ttf")
 }
