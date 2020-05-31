@@ -239,7 +239,7 @@ footer{
     color:rgb(100,100,100);
 }
 
-.reserve-button a,.popup-container a{
+.reserve-button a{
 	color:black;
 	padding: 10px;
 	text-decoration: none;
@@ -262,13 +262,51 @@ footer{
     transform: translateY(50px);
     transition:1s;
 }
-.reserve-button,.popup-container a{
+.reserve-button{
     text-align: center;
     margin-top:5vh;
 }
-.reserve-button a:hover,.popup-container a:hover{
+.reserve-button a:hover{
 	color:white;
 	background-color:black;
+}
+.btn-rsv{
+    position: absolute;
+    color:white;
+	padding: 10px;
+	text-decoration: none;
+	margin-top:0px;
+	border: 1px solid white;
+	background-color: black; 
+	border-radius: 0px;
+	transition:0.2s;
+    font-family: "b612";
+    width:15%;
+    text-align:center;
+}
+.rsv-nav{
+    margin-bottom: 3em;
+}
+.btn-rsv:hover{
+	color:black;
+    background-color:white;
+    border:1px solid black;
+}
+
+.btn-right{
+    position: absolute;
+    right:2em;
+
+}
+.btn-cntr{
+    position: relative;
+}
+.btn-left{
+    position: absolute;
+    left:2em;
+    border: 1px solid black;
+    background-color: white; 
+    color:black;
 }
 h1::after{
     content:"";
@@ -361,9 +399,6 @@ h1::after{
     padding:5px;
 }
 
-.popup-container a{
-    float: right;
-}
 
 td#jam{
     display: inline;
