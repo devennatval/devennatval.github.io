@@ -81,8 +81,16 @@
         <h2>RESERVATION FORM</h2>
         <label>Full Name: </label><input type="text" name="custName"> <br>
         <label>Email: </label><input type="text" name="custEmail"> <br>
-        <a onclick="toggle()">Close</a>
+        <a onclick="toggle2()">Next</a>
     </div>
+
+    <div id="popup2">
+        <h2>RESERVATION FORM</h2>
+        <label>2 2: </label><input type="text" name="custName"> <br>
+        <label>2 2: </label><input type="text" name="custEmail"> <br>
+        <a onclick="toggle3()">Close</a>
+    </div>
+
     <footer>
 		<div class="fixFooter">
 			<div class="footer-container">
@@ -150,6 +158,19 @@
                 var blur = document.getElementById('blur');
                 popup.classList.toggle('active');
             }
+            function toggle2(){
+            	var blur = document.getElementById('blur');
+                popup.classList.toggle('active');
+                var blur = document.getElementById('blur');
+                popup2.classList.toggle('active');
+            }
+             function toggle3(){
+                var blur = document.getElementsByClassName('wrapper')[0];
+                blur.classList.toggle('blur');
+                var blur = document.getElementById('blur');
+                popup2.classList.toggle('active');
+            }
+            offtoggle()
         </script>
 </body>
 </html>
