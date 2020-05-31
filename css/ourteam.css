@@ -6,7 +6,9 @@
     font-family: "kiona";
     src:url("../source/font/Kiona.ttf")
 }
-
+body{
+    background-color:#f6f1ee;
+}
 .site-header{
     width: 100%;
     position: absolute;
