@@ -89,10 +89,134 @@
 		</div>
     </div>
     <div id="popup">
-        <h2>RESERVATION FORM</h2>
-        <label>Full Name: </label><input type="text" name="custName"> <br>
-        <label>Email: </label><input type="text" name="custEmail"> <br>
-        <a onclick="toggle()">Close</a>
+        <table class="popup-container">
+            <tr>
+                <td><h2>RESERVATION FORM</h2></td>
+            </tr>
+
+            <tr>
+                <td><label>Full Name: </label><input type="text" name="custName"></td>
+            </tr>
+            <tr>
+                <td><label>Last Name: </label><input type="text" name="custName"></td>
+            </tr>
+
+            <tr>
+                <td><label>Email: </label><input type="text" name="custEmail"> </td>
+            </tr>
+            <tr>
+                <td><label>Phone Number: </label><input type="text" name="custName"></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <a onclick="toggle2()">Next</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="popup2">
+        <table class="popup-container">       
+            <tr>
+                <td><h2>Your Event Details</h2></td>
+            </tr>
+            
+            
+            <tr>
+                <td>
+                    <label>Nature of this Event (e.g., Birthday Party or Business Dinner)</label><input type="text" name="custName">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Event Date*: </label><input type="date" name="custDatePreference">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Event Time*: </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <select name="custTimeAMPMPreference">
+                        <option value="am">AM</option>
+                        <option value="pm">PM</option>
+                    </select>
+                </td>
+            
+                <td>
+                    <select name="custTimeBeginPreference">
+                        <option value="0">-</option>
+                        <option value="1">01:00</option>
+                        <option value="2">02:00</option>
+                        <option value="3">03:00</option>
+                        <option value="4">04:00</option>
+                        <option value="5">05:00</option>
+                        <option value="6">06:00</option>
+                        <option value="7">07:00</option>
+                        <option value="8">08:00</option>
+                        <option value="9">09:00</option>
+                        <option value="10">10:00</option>
+                        <option value="11">11:00</option>
+                        <option value="12">12:00</option>
+                    </select>
+                </td>
+            
+                <td>
+                    <label>to</label>
+                        <select name="custTimeEndPreference">
+                            <option value="0">-</option>
+                            <option value="1">01:00</option>
+                            <option value="2">02:00</option>
+                            <option value="3">03:00</option>
+                            <option value="4">04:00</option>
+                            <option value="5">05:00</option>
+                            <option value="6">06:00</option>
+                            <option value="7">07:00</option>
+                            <option value="8">08:00</option>
+                            <option value="9">09:00</option>
+                            <option value="10">10:00</option>
+                            <option value="11">11:00</option>
+                            <option value="12">12:00</option>
+                        </select>
+                </td>
+            </tr>
+        <tr>
+            <td>
+                <label>Number of People</label><input type="text" name="custName">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Is there any additional information you would like to add?</label><input type="text" name="custName">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>How did you hear about us?</label><input type="text" name="custName">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <a onclick="toggle3()">Submit</a>
+            </td>
+        </tr>
+
+        </table>
     </div>
     <footer>
 		<div class="fixFooter">
@@ -176,6 +300,18 @@
                 blur.classList.toggle('blur');
                 var blur = document.getElementById('blur');
                 popup.classList.toggle('active');
+            }
+            function toggle2(){
+                var blur = document.getElementById('blur');
+                popup.classList.toggle('active');
+                var blur = document.getElementById('blur');
+                popup2.classList.toggle('active');
+            }
+            function toggle3(){
+                var blur = document.getElementsByClassName('wrapper')[0];
+                blur.classList.toggle('blur');
+                var blur = document.getElementById('blur');
+                popup2.classList.toggle('active');
             }
         </script>
 </body>
