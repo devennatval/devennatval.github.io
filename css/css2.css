@@ -209,6 +209,7 @@ footer{
 }
 .content-box p{
     line-height: 2;
+    color:rgb(125,125,125);
 }
 .content-box h1{
     font-family:"kiona";
@@ -292,7 +293,17 @@ footer{
 
 .badges{
 	display:inline;
-	margin-right: 10px;
+    margin-right: 10px;
+}
+.zoom-image{
+    transition:0.2s;
+    width:100px;
+}
+#awrd1:hover{
+    width:130px;
+}
+#awrd2:hover{
+    width:130px;
 }
 h1::after{
     content:"";
@@ -301,4 +312,8 @@ h1::after{
     height: 3px;
     background:black;
     margin: 1rem auto 2rem 0;
+}
+
+.last{
+    margin-bottom: 100px;
 }
