@@ -293,14 +293,15 @@ h1::after{
     user-select: none;
 }
 
-#popup
+#popup,#popup2
 {
     position: fixed;
     top: 40%;
     left: 50%;
     transform: translate(-50%,-50%);
-    width: 600px;
-    padding: 50px;
+    width: 100%;
+    height: 100%;
+    padding-top: 100px;
     box-shadow: 0 5px 30px rgba(0,0,0,.30);
     background:#fff;
     visibility: hidden;
@@ -308,24 +309,50 @@ h1::after{
     transition: 0.5s;
 }
 
-#popup.active
+#popup.active,#popup2.active
 {
-    top: 55%;
     visibility: visible;
     opacity: 1;
 }
 
-#popup{
+#popup,#popup2{
     background-color: #f6f1ee;
     font-family: "b612";
     box-shadow: 0 0 10 30px #888888;
 }
 
-#popup input{
+#popup input,#popup2 input{
     display:block;
-    width: 100%;
+    width: 98%;
     height: 20px;
     border-radius: 5px;
     font-family: "b612";
     font-weight: bold;
+    padding:5px;
+
+}
+
+#popup h2{
+
+}
+
+.popup-container{
+    width: 40%;
+    margin:auto;
+    position: relative;
+    padding-top: 200px;
+}
+
+#popup2 select{
+    display:inline;
+    width: 25%;
+    height: 30px;
+    border-radius: 5px;
+    font-family: "b612";
+    font-weight: bold;
+    padding:5px;
+}
+
+tr{
+    width: 50%;
 }
