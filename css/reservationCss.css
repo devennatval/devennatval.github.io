@@ -315,6 +315,7 @@ h1::after{
     border-radius: 5px;
     font-family: "b612";
     font-weight: bold;
+    padding:5px;
 }
 
 #popup2.active
