@@ -6,6 +6,10 @@
     font-family: "kiona";
     src:url("../source/font/Kiona.ttf")
 }
+body{
+    background-color:#f6f1ee;
+    overflow-y:scroll;
+}
 .site-header{
     width: 100%;
     position: absolute;
@@ -131,11 +135,6 @@ footer{
     margin-left: 15px;
 }
 
-.wrapper{
-    background-color:#f6f1ee;
-}
-
-
 
 .site-body{
     position:relative;
@@ -174,27 +173,22 @@ footer{
     background-color:black;
 }
 
-#text-menu{
+#text-menu,#text-wine{
     font-size: 1rem;
     text-align: center;
     font-weight: normal;
     line-height: 2;
-    margin-bottom:1rem;
+    margin-bottom:3rem;
     margin-top:14vh;
-    color:rgb(100,100,100);
+    color:rgb(125,125,125);
     font-family:"b612";
+    transition:1s;
+    animation:opening 2s;
 }
 
 #text-wine{
-    font-size: 1rem;
     text-align: justify;
-    font-weight: normal;
-    line-height: 2;
-    margin-bottom:1rem;
-    margin-top:14vh;
-    color:rgb(100,100,100);
-    font-family:"b612";
-
+    display:none;
 }
 
 .body-nav-menu{
@@ -206,14 +200,24 @@ footer{
 .body-nav-menu li{
     display: inline-block;
 }
+#wine-list,#menu-list{
+    color:black;
+    transition:0.5s;
+    font-weight: bold;
+}
+#menu-list{
+    color: #9a574b;
+}
 .body-nav-menu li a{
-    color: black;
     text-decoration: none;
     padding: 0.5em 0.5em;
     font-size:2em;
     font-family: "kiona";
 }
 
-#merah{
-    color: red;
+.wine-price{
+    width:100%;
+    padding:2rem;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
 }
