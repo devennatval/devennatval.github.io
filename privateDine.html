@@ -3,8 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Reservations | Affamato</title>
-	<link rel="stylesheet" type="text/css" href="css/reservationCss.css">
+	<title>Private Dining | Affamato</title>
+	<link rel="stylesheet" type="text/css" href="css/privateDineCss.css">
 </head>
 <body>
     <header>
@@ -36,44 +36,55 @@
 	        </div>
 			<div class="content-box">
 					<div class="guest-policies">
-						<h1>HOURS & GUEST POLICIES</h1>
-						<p>Quince serves dinner Tuesday through Saturday and is closed Sunday and Monday. We are open for private dining 7 days a week. Our hours are Tuesday through Thursday from 5:30 p.m. to 9:00 p.m., Friday and Saturday from 5:00 p.m. to 9:00 p.m.</p>
+						<h1>PRIVATE FINE DINING @ AFFAMATO</h1>
+						<p>Whether entertaining a select group or hosting a large reception throughout the entire restaurant, Quince offers a number of options suitable for any occasion or event. A dedicated staff ensures that every detail of your event is attended to.</p>
 	                    
-	                    <p>To make a reservation please call 415.775.8500, Monday through Saturday from 10:00 a.m. to 6:00 p.m. or reserve online through OpenTable using the links below. Our Guest Services team can also be reached via email at info@quincerestaurant.com.</p>
+	                    <p>Private dining available 7 days a week.</p>
+
+	                    <div class="reserve-button">
+                        	<a onclick="toggle()">INQUIRE NOW</a>
+                    	</div>
 					</div>
-				<div class="reservation-image" style='background-image:url("source/reservation02.jpg")'>
+				<div class="reservation-image" style='background-image:url("source/private2.jpg")'>
                 </div>
                 
 				<div class="room-type">
-                    <h1>DINING ROOM RESERVATIONS</h1>
-                    <p>Main Dining Room reservations can be made up to three months in advance.
-                    <br><br>
-                    Quince features a nightly tasting menu in the Main Dining Room that highlights the seasonal bounty of Northern California. The cost of the tasting menu is 298 dollars per person.
-                    <br><br>
-                    When making your reservation, please indicate any dietary restrictions. Due to the complexity of the menu, it may not be possible to accommodate all restrictions and food allergies.
-                    <br><br>
-                    All reservations are confirmed by phone at least three days prior. Any cancellations must be made at least 48 hours prior to the time of the reservation to avoid a 298 dollar (plus tax) per person late cancellation charge; this policy applies to same day reservations as well. If we are unable to confirm with you, your reservation will be cancelled one day prior to the reservation at 5:00 pm. We thank you for your understanding.</p>
-                    <div class="reserve-button">
-                        <a onclick="toggle()">DINING ROOM RESERVATION</a>
-                    </div>
+                    <h1>WEST WING DINING ROOM</h1>
+                    <p>Steps above the main dining room, this lavish space is available for exclusive use each evening. With views into the vaulted wine cellar through historic brick archways, the room also features glass panel doors and silk drapery to allow for complete privacy for discerning groups of up to 18 guests.
+                    
                 </div>
 
-                <div class="reservation-image" style='background-image:url("source/reservation03.jpg")'>
+                <div class="reservation-image" style='background-image:url("source/private3.jpg")'>
                 </div>
                 
                 <div class="room-type last">
-                    <h1>TERRACE RESERVATIONS</h1>
-                    <p>Main Dining Room reservations can be made up to three months in advance.
-                    <br><br>
-                    Quince features a nightly tasting menu in the Main Dining Room that highlights the seasonal bounty of Northern California. The cost of the tasting menu is 298 dollars per person.
-                    <br><br>
-                    When making your reservation, please indicate any dietary restrictions. Due to the complexity of the menu, it may not be possible to accommodate all restrictions and food allergies.
-                    <br><br>
-                    All reservations are confirmed by phone at least three days prior. Any cancellations must be made at least 48 hours prior to the time of the reservation to avoid a 298 dollar (plus tax) per person late cancellation charge; this policy applies to same day reservations as well. If we are unable to confirm with you, your reservation will be cancelled one day prior to the reservation at 5:00 pm. We thank you for your understanding.</p>
-                    <div class="reserve-button">
-                        <a onclick="toggle()">TERRACE RESERVATION</a>
-                    </div>
+
+                    <h1>EAST WING DINING ROOM</h1>
+                    <p>Adjacent to the Quince dining room, the restaurant offers two smaller private dining rooms with an elegant setting to host intimate gatherings for groups of up to 12 guests.</p>
+
                 </div>
+
+                <div class="reservation-image" style='background-image:url("source/reserve.jpg")'>
+                </div>
+
+                <div class="restaurant-desc">
+
+                    <h1>EXCLUSIVE USE OF THE RESTAURANT</h1>
+                    <p>The striking architecture of the building, together with modern interiors, provide a stunning venue to host larger parties. Exclusive use of the restaurant can be arranged for both luncheon and dinner events each day, with the front salon and bar serving as the perfect setting for a reception in advance of a seated event.</p>
+
+                </div>
+
+                <div class="reservation-image" style='background-image:url("source/events.jpg")'>
+                </div>
+
+                <div class="events-desc">
+
+                    <h1>SPECIAL OCCASION EVENTS</h1>
+                    <p>Tusk Events is Chef Michael Tusk's full-service catering and events production company featuring Quince's celebrated cuisine and refined service. Available for offsite events at your residence or a venue of your choosing, Tusk Events delivers world-class dining experiences beyond the four walls of the restaurant for parties of 20 to over 200.</p>
+
+                </div>
+                
+
 			</div>
 		</div>
     </div>
@@ -133,13 +144,29 @@
             document.getElementsByClassName("room-type")[0].style.opacity = "100%";
             document.getElementsByClassName("room-type")[0].style.transform = "translateY(0px)";
           }
-          if (document.body.scrollTop > 2000 || document.documentElement.scrollTop > 2000) {
+          if (document.body.scrollTop > 1600 || document.documentElement.scrollTop > 1600) {
             document.getElementsByClassName("reservation-image")[1].style.opacity = "100%";
             document.getElementsByClassName("reservation-image")[1].style.transform = "translateY(0px)";
           }
-          if (document.body.scrollTop > 2600 || document.documentElement.scrollTop > 2600) {
+          if (document.body.scrollTop > 2000 || document.documentElement.scrollTop > 2000) {
             document.getElementsByClassName("room-type")[1].style.opacity = "100%";
             document.getElementsByClassName("room-type")[1].style.transform = "translateY(0px)";
+          }
+          if (document.body.scrollTop > 2500 || document.documentElement.scrollTop > 2500) {
+            document.getElementsByClassName("reservation-image")[2].style.opacity = "100%";
+            document.getElementsByClassName("reservation-image")[2].style.transform = "translateY(0px)";
+          }
+          if (document.body.scrollTop > 2900 || document.documentElement.scrollTop > 2900) {
+            document.getElementsByClassName("restaurant-desc")[0].style.opacity = "100%";
+            document.getElementsByClassName("restaurant-desc")[0].style.transform = "translateY(0px)";
+          }
+          if (document.body.scrollTop > 3300 || document.documentElement.scrollTop > 3300) {
+            document.getElementsByClassName("reservation-image")[3].style.opacity = "100%";
+            document.getElementsByClassName("reservation-image")[3].style.transform = "translateY(0px)";
+          }
+          if (document.body.scrollTop > 3900 || document.documentElement.scrollTop > 3900) {
+            document.getElementsByClassName("events-desc")[0].style.opacity = "100%";
+            document.getElementsByClassName("events-desc")[0].style.transform = "translateY(0px)";
           }
         }
         </script>
