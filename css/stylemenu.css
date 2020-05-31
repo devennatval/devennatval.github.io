@@ -131,7 +131,7 @@ footer{
     margin-left: 15px;
 }
 
-.wrapper{
+.wrapper,body{
     background-color:#f6f1ee;
 }
 
