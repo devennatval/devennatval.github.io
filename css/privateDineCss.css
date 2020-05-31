@@ -239,7 +239,7 @@ footer{
     color:rgb(100,100,100);
 }
 
-.reserve-button a{
+.reserve-button a,.popup-container a{
 	color:black;
 	padding: 10px;
 	text-decoration: none;
@@ -262,11 +262,11 @@ footer{
     transform: translateY(50px);
     transition:1s;
 }
-.reserve-button{
+.reserve-button,.popup-container a{
     text-align: center;
     margin-top:5vh;
 }
-.reserve-button a:hover{
+.reserve-button a:hover,.popup-container a:hover{
 	color:white;
 	background-color:black;
 }
@@ -307,6 +307,7 @@ h1::after{
     visibility: hidden;
     opacity: 0;
     transition: 0.5s;
+    overflow: auto;
 }
 
 #popup.active,#popup2.active
@@ -321,6 +322,10 @@ h1::after{
     box-shadow: 0 0 10 30px #888888;
 }
 
+#popup input#gedein{
+    height: 150px;
+}
+
 #popup input,#popup2 input{
     display:block;
     width: 98%;
@@ -329,21 +334,26 @@ h1::after{
     font-family: "b612";
     font-weight: bold;
     padding:5px;
+    padding-left: 20px;
+    margin-top: 10px;
 
 }
 
-#popup h2{
 
+#popup h2{
+    text-align: center;
+    font-family: "kiona";
+    font-size: 30px;
 }
 
 .popup-container{
-    width: 40%;
+    width: 30%;
     margin:auto;
     position: relative;
-    padding-top: 200px;
+    padding-top: 100px;
 }
 
-#popup2 select{
+#popup select{
     display:inline;
     width: 25%;
     height: 30px;
@@ -353,6 +363,24 @@ h1::after{
     padding:5px;
 }
 
+.popup-container a{
+    float: right;
+}
+
+td#jam{
+    width: 100%;
+    display: inline;
+}
+
 tr{
-    width: 50%;
+    height: 80px;
+}
+
+#popup2 p,.popup-container label{
+    text-align: center;
+    font-size: 1rem;
+}
+
+table{
+    margin: auto;
 }
