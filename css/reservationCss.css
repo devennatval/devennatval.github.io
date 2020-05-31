@@ -280,7 +280,7 @@ h1::after{
     user-select: none;
 }
 
-#popup,#popup2,#popup3
+#popup,#popup2,#popup3,#popup4,#popup5,#popup6
 {
     position: fixed;
     top: 40%;
@@ -295,22 +295,22 @@ h1::after{
     transition: 0.5s;
 }
 
-#popup.active,#popup2.active,#popup3.active
+#popup.active,#popup2.active,#popup3.active,#popup4.active,#popup5.active,#popup6.active
 {
     top: 55%;
     visibility: visible;
     opacity: 1;
 }
 
-#popup,#popup2.#popup3{
+#popup,#popup2,#popup3,#popup4,#popup5,#popup6{
     background-color: #f6f1ee;
     font-family: "b612";
     box-shadow: 0 0 10 30px #888888;
 }
 
-#popup input,#popup2 input,#popup3 input{
+#popup input,#popup2 input,#popup3 input,#popup4 input,#popup5 input,#popup6 input{
     display:block;
-    width: 100%;
+    width: 98%;
     height: 20px;
     border-radius: 5px;
     font-family: "b612";
@@ -318,3 +318,36 @@ h1::after{
     padding:5px;
 }
 
+#popup2 select{
+    display:block;
+    width: 606px;
+    height: 30px;
+    border-radius: 5px;
+    font-family: "b612";
+    font-weight: bold;
+    padding:5px;
+}
+
+#popup3 select{
+    display:block;
+    width: 606px;
+    height: 30px;
+    border-radius: 5px;
+    font-family: "b612";
+    font-weight: bold;
+    padding:5px;
+}
+
+#popup4 select{
+    display:inline-block;
+    width: 31.5%;
+    height: 30px;
+    border-radius: 5px;
+    font-family: "b612";
+    font-weight: bold;
+    padding:5px;
+}
+
+#popup6 p{
+    margin:2px;
+}

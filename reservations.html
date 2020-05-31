@@ -81,23 +81,92 @@
         <h2>RESERVATION FORM</h2>
         <label>Full Name*: </label><input type="text" name="custName"> <br>
         <label>Email*: </label><input type="text" name="custEmail"> <br>
+        <a onclick="toggle()">Close</a>
         <a onclick="toggle2()">Next</a>
     </div>
 
     <div id="popup2">
         <h2>RESERVATION FORM</h2>
-        <label>Phone Number*: </label><input type="text" name="custName" placeholder="081xxxxxxxxx"> <br>
-        <label>Gender*: </label><input type="text" name="custGender" placeholder="Male/Female"> <br>
+        <label>Phone Number*: </label><input type="text" name="custPhone" placeholder="081xxxxxxxxx"> <br>
+        <label>Gender*: </label><br>
+        <select name="custGender">
+        	<option value="male">Male</option>
+        	<option value="female">Female</option>
+        </select><br><br>
+        
         <a onclick="toggle3()">Next</a>
     </div>
 
     <div id="popup3">
-        <h2>RESERVATION FORM</h2>
-        <label>3 3: </label><input type="text" name="custName"> <br>
-        <label>3 3: </label><input type="text" name="custEmail"> <br>
-        <a onclick="toggle4()">Close</a>
-    </div>
+        <h2>YOUR EVENT DETAILS</h2>
+        <label>Environment*: </label><br>
+        <select name="custEnvPreference">
+        	<option value="diningRoom">Dining Room</option>
+        	<option value="terrace">Terrace Area</option>
+        </select><br>
+        <label>Event Type*: </label><input type="text" name="custEventPreference" placeholder="Nature of this Event (e.g., Birthday Party or Business Dinner)"> <br>
         
+        <a onclick="toggle4()">Next</a>
+    </div>
+
+    <div id="popup4">
+        <h2>YOUR EVENT DETAILS</h2>
+        <label>Event Date*: </label><input type="date" name="custDatePreference"> <br>
+        <label>Event Time*: </label><br>
+        <select name="custTimeAMPMPreference">
+        	<option value="am">AM</option>
+        	<option value="pm">PM</option>
+        </select>
+        <select name="custTimeBeginPreference">
+        	<option value="0">-</option>
+        	<option value="1">01:00</option>
+        	<option value="2">02:00</option>
+        	<option value="3">03:00</option>
+        	<option value="4">04:00</option>
+        	<option value="5">05:00</option>
+        	<option value="6">06:00</option>
+        	<option value="7">07:00</option>
+        	<option value="8">08:00</option>
+        	<option value="9">09:00</option>
+        	<option value="10">10:00</option>
+        	<option value="11">11:00</option>
+        	<option value="12">12:00</option>
+        </select>
+        <label>to</label>
+        <select name="custTimeEndPreference">
+        	<option value="0">-</option>
+        	<option value="1">01:00</option>
+        	<option value="2">02:00</option>
+        	<option value="3">03:00</option>
+        	<option value="4">04:00</option>
+        	<option value="5">05:00</option>
+        	<option value="6">06:00</option>
+        	<option value="7">07:00</option>
+        	<option value="8">08:00</option>
+        	<option value="9">09:00</option>
+        	<option value="10">10:00</option>
+        	<option value="11">11:00</option>
+        	<option value="12">12:00</option>
+        </select><br><br>
+        
+        <a onclick="toggle5()">Next</a>
+    </div>
+    
+    <div id="popup5">
+        <h2>RESERVATION FORM</h2>
+        <label>Number of People(s)*: </label><input type="text" name="custPeople"> <br>
+        <label>Additional Information (optional): </label><input type="textarea" name="custAddInfo"> <br>
+        
+        <a onclick="toggle6()">Submit</a>
+    </div>
+
+    <div id="popup6">
+        <h2>YOUR RESERVATION IS SUCCESSFUL!</h2>
+        <p>Please kindly wait for your Reservation's approval.</p>
+        <p>You will be notified via Email within 24 hours.</p>
+        <p>Thank You. -Affamato Team</p><br>
+        <a onclick="toggle7()">Close</a>
+    </div>     
 
     <footer>
 		<div class="fixFooter">
@@ -179,10 +248,28 @@
                 popup3.classList.toggle('active');
             }
              function toggle4(){
+                var blur = document.getElementById('blur');
+                popup3.classList.toggle('active');
+                var blur = document.getElementById('blur');
+                popup4.classList.toggle('active');
+            }
+            function toggle5(){
+                var blur = document.getElementById('blur');
+                popup4.classList.toggle('active');
+                var blur = document.getElementById('blur');
+                popup5.classList.toggle('active');
+            }
+            function toggle6(){
+                var blur = document.getElementById('blur');
+                popup5.classList.toggle('active');
+                var blur = document.getElementById('blur');
+                popup6.classList.toggle('active');
+            }
+            function toggle7(){
                 var blur = document.getElementsByClassName('wrapper')[0];
                 blur.classList.toggle('blur');
                 var blur = document.getElementById('blur');
-                popup3.classList.toggle('active');
+                popup6.classList.toggle('active');
             }
             offtoggle()
         </script>
