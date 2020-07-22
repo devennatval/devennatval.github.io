@@ -1,0 +1,17 @@
+@font-face{
+    font-family: alwaysForever;
+    src:url(Always\ Forever.ttf);
+}
+@font-face{
+    font-family: alwaysForeverBold;
+    src:url(Always\ Forever\ Bold.ttf);
+}
+.container{
+    width:80%;
+    margin:auto;
+    font-family: "alwaysForeverBold";
+    text-align:center;
+}
+.container h1{
+    font-size:20em;
+}
